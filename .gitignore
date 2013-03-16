@@ -21,15 +21,20 @@ lib64
 # Installer logs
 pip-log.txt
 
-# # Unit test / coverage reports
+# Unit test / coverage reports
 .coverage
 .tox
 nosetests.xml
 
-# # Translations
+# Translations
 *.mo
 
-# # Mr Developer
+# Mr Developer
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Editor junk
+*.bak
+*~
+*.swp
