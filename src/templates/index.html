@@ -9,16 +9,19 @@
     </hgroup>
 
     <form method="GET">
-        <select name="num_paragraphs">
-            {% for option in paragraph_options %}
-            <option
-            {% if option == num_paragraphs %}
-            selected="true"
-            {% endif %}
-            >{{option}}</option>
-            {% endfor %}
-        </select>
-        <input type="submit">
+        <fieldset>
+            <legend>from python import gibberish</legend>
+            <select name="num_paragraphs">
+                {% for option in paragraph_options %}
+                <option
+                {% if option == num_paragraphs %}
+                selected="true"
+                {% endif %}
+                >{{option}}</option>
+                {% endfor %}
+            </select>
+            <input type="submit">
+        </fieldset>
     </form>
 
     <article>
@@ -26,6 +29,10 @@
     <p>{{paragraph}}</p>
     {% endfor %}
     </article>
+
+    <aside>
+        <p>We also have a <a href="{{ api_url }}?num_paragraphs=1">JSON API</a>!</p>
+    </aside>
 
 </body>
 </html>
