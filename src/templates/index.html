@@ -8,6 +8,24 @@
         <h2>Your source for Python-flavored placeholder text</h2>
     </hgroup>
 
+    <form method="GET">
+        <select name="num_paragraphs">
+            {% for option in paragraph_options %}
+            <option
+            {% if option == num_paragraphs %}
+            selected="true"
+            {% endif %}
+            >{{option}}</option>
+            {% endfor %}
+        </select>
+        <input type="submit">
+    </form>
+
+    <article>
+    {% for paragraph in paragraphs %}
+    <p>{{paragraph}}</p>
+    {% endfor %}
+    </article>
 
 </body>
 </html>

@@ -26,6 +26,8 @@ def homepage():
     num_paragraphs = form.num_paragraphs.data or 1
     paragraphs = get_paragraphs(num_paragraphs)
 
+    paragraph_options = range(1, 11)
+
     return render_template('index.html', **locals())
 
 if __name__ == '__main__':
