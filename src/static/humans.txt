@@ -1,0 +1,13 @@
+/* CREATOR */
+
+    Mike Pirnat: http://mike.pirnat.com
+
+
+/* CONTRIBUTORS */
+
+    Nolan Brubaker: http://twitter.com/palendae
+
+
+/* THANKS */
+
+    PyCon 2013
