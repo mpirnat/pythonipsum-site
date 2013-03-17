@@ -1,44 +1,51 @@
 <html>
 <head>
 <title>Python Ipsum</title>
+<link href="http://fonts.googleapis.com/css?family=Merriweather+Sans:700,800,400,300" rel="stylesheet" type="text/css">
+<link href="/static/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <hgroup>
-        <h1>Python Ipsum</h1>
-        <h2>Your source for Python-flavored placeholder text</h2>
-    </hgroup>
+    <div id="page">
+        <hgroup>
+            <h1>Python Ipsum</h1>
+            <h2>Your source for Python-flavored placeholder text</h2>
+        </hgroup>
 
-    <form method="GET">
-        <fieldset>
-            <legend>from python import gibberish</legend>
-            <select name="num_paragraphs">
-                {% for option in paragraph_options %}
-                <option
-                {% if option == num_paragraphs %}
-                selected="true"
-                {% endif %}
-                >{{option}}</option>
-                {% endfor %}
-            </select>
-            <input type="submit">
-        </fieldset>
-    </form>
+        <form method="GET">
+            <fieldset>
+                <legend>from python import gibberish</legend>
+                <label for="num_paragraphs">Paragraphs:</label>
+                <select name="num_paragraphs">
+                    {% for option in paragraph_options %}
+                    <option
+                    {% if option == num_paragraphs %}
+                    selected="true"
+                    {% endif %}
+                    >{{option}}</option>
+                    {% endfor %}
+                </select>
+                <input type="submit" value="Import Gibberish">
 
-    <article>
-    {% for paragraph in paragraphs %}
-    <p>{{paragraph}}</p>
-    {% endfor %}
-    </article>
+            <aside>
+                <p>We also have a <a href="{{ api_url }}?num_paragraphs=1">JSON API</a>!</p>
+            </aside>
 
-    <aside>
-        <p>We also have a <a href="{{ api_url }}?num_paragraphs=1">JSON API</a>!</p>
-    </aside>
+            </fieldset>
 
-    <footer>
-        <p>Created by <a href="http://mike.pirnat.com">Mike Pirnat</a>
-        and <a href="https://twitter.com/palendae">Nolan Brubaker</a>
-        at <a href="http://us.pycon.org/2013">PyCon 2013</a></p>
-    </footer>
+        </form>
 
+        <article>
+        {% for paragraph in paragraphs %}
+        <p>{{paragraph}}</p>
+        {% endfor %}
+        </article>
+
+
+        <footer>
+            <p>Created by <a href="http://mike.pirnat.com">Mike Pirnat</a>
+            and <a href="https://twitter.com/palendae">Nolan Brubaker</a>
+            at <a href="http://us.pycon.org/2013">PyCon 2013</a></p>
+        </footer>
+    </div>
 </body>
 </html>

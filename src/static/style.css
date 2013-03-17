@@ -1,0 +1,52 @@
+#page {
+    margin: auto;
+    width: 1000px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 300;
+}
+
+a, a:visited {
+    color: blue;
+}
+
+h1, h2 {
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 100pt;
+    margin-bottom: -0.2em;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 24pt;
+}
+
+legend {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18pt;
+}
+
+article {
+    width: 700px;
+    height: 300px;
+    margin: auto;
+    overflow: scroll;
+    background-color: #FEFF9A;
+    padding: 1em;
+}
+article p:first-child {
+    margin-top: 0;
+}
+
+article p:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    border-top: 1px solid grey;
+}
