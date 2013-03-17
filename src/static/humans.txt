@@ -11,3 +11,15 @@
 /* THANKS */
 
     PyCon 2013
+
+
+/* LINKS */
+
+    Python Ipsum: https://github.com/mpirnat/pythonipsum
+
+        Want help add words or tweak the word frequency, sentence structure,
+        etc?  Send a pull request!
+
+    Python Ipsum Website: https://github.com/mpirnat/pythonipsum-site
+
+        Styling, website improvements, etc... Again, send a pull request!
